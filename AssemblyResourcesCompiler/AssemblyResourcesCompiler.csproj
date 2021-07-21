@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
+    <PublishTrimmed>true</PublishTrimmed>
+    <!--<TrimMode>CopyUsed</TrimMode>-->
+    <TrimMode>Link</TrimMode>
+    <EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>
+    <IncludeAllContentForSelfExtract>true</IncludeAllContentForSelfExtract>
+    <UnsafeBinaryFormatterSerialization>false</UnsafeBinaryFormatterSerialization>
+    <PublishSingleFile>true</PublishSingleFile>
+    <AssemblyName>ARC</AssemblyName>
+    <!--<DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.10.0" />
+  </ItemGroup>
+
+</Project>
